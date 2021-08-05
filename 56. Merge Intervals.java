@@ -33,11 +33,9 @@ class Solution {
 		}
 		int res[][] = new int[s1.size()][2];
 		for (int i = 0; i < res.length; i++) {
-			for (int j = 0; j < 2; j++) {
 				Pair top = s1.peek();
 					res[i][0] = (int) top.st;
 					res[i][1] = (int) top.et;
-			}
             s1.pop();
 		}
 		return res;
