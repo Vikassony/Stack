@@ -24,7 +24,7 @@ class Solution
                 st.pop();
             }
             if(st.isEmpty())
-            a[i]=i+1;
+            a[i]=i+1;    //if there is no elements on the left then put i+1;
             else
             a[i]=i-st.peek();
             st.push(i);
