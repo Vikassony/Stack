@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class Main
 {
     int size=5;
@@ -53,6 +53,15 @@ public class Main
             System.out.println();
         }
     }
+    int size()
+    {
+        if(top==-1){
+            return -1;
+        }
+        else{
+            return top+1;
+        }
+    }
     
     
 	public static void main(String[] args) {
@@ -64,6 +73,7 @@ public class Main
 		main.push(50);
 		main.push(60);
 		main.peek();
+		System.out.println("The size of stack is : "+(main.size()==-1?"0":main.size()));
 		main.display();
 		main.pop();
 		main.display();
